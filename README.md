@@ -44,11 +44,8 @@ make lint
 ## Development
 
 ```bash
-# Build go server image
-make build
-
 # Launch all services
-make upAll
+make up
 ```
 
 

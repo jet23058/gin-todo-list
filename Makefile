@@ -4,11 +4,9 @@ start:
 	POSTGRES_HOST=localhost go run ./src/main.go
 setEnv:
 	cp .env.example .env
-build:
-	docker build -t kenfront/gin-todolist:latest .
 upDB:
 	docker compose up db migrate
-upAll:
+up:
 	docker compose up -d
 down:
 	docker compose down
