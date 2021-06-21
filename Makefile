@@ -9,7 +9,7 @@ build:
 upDB:
 	docker compose up db migrate
 upAll:
-	docker compose up
+	docker compose up -d
 down:
 	docker compose down
 test:

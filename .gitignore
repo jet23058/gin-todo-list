@@ -14,8 +14,7 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-# Database data
-db/data/*
-
 # env
 .env
+
+*.idea
