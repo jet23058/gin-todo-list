@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  db:
+    container_name: PostgresDB
+    image: postgres:13.2-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    volumes:
+      - "${POSTGRES_PGDATA}:/var/lib/postgresql/data"
+  migrate:
+    container_name: MigratePostgresDB
+    image: migrate/migrate:v4.14.1
+    restart: on-failure
+    volumes:
+      - "${POSTGRES_MIGRATION_FILES_PATH}:/migrations"
+    command: >-
+      -source=file://migrations
+      -database=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}?sslmode=${POSTGRES_SSLMODE}
+      goto
+      ${POSTGRES_VERSION}
+    depends_on:
+      - db
+  server:
+    container_name: GinServer
+    image: kenfront/gin-todolist
+    ports:
+      - "${SERVER_PORT}:${SERVER_PORT}"
+    restart: always
+    depends_on:
+      - db
