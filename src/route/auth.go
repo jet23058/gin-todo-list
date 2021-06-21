@@ -1,7 +1,8 @@
 package route
 
 import (
-	controller_auth "github.com/KenFront/gin-todo-list/src/controller/auth"
+	controller_auth "gin-todo-list/src/controller/auth"
+
 	"github.com/gin-gonic/gin"
 )
 

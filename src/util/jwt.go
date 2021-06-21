@@ -3,7 +3,8 @@ package util
 import (
 	"errors"
 
-	"github.com/KenFront/gin-todo-list/src/config"
+	"gin-todo-list/src/config"
+
 	"github.com/dgrijalva/jwt-go"
 )
 

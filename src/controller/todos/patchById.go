@@ -4,8 +4,9 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/KenFront/gin-todo-list/src/model"
-	"github.com/KenFront/gin-todo-list/src/util"
+	"gin-todo-list/src/model"
+	"gin-todo-list/src/util"
+
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )

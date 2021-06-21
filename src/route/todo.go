@@ -1,10 +1,11 @@
 package route
 
 import (
-	"github.com/KenFront/gin-todo-list/src/config"
-	controller_todos "github.com/KenFront/gin-todo-list/src/controller/todos"
-	"github.com/KenFront/gin-todo-list/src/middleware"
-	"github.com/KenFront/gin-todo-list/src/util"
+	"gin-todo-list/src/config"
+	controller_todos "gin-todo-list/src/controller/todos"
+	"gin-todo-list/src/middleware"
+	"gin-todo-list/src/util"
+
 	"github.com/gin-gonic/gin"
 )
 

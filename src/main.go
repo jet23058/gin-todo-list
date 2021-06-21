@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/KenFront/gin-todo-list/src/config"
-	"github.com/KenFront/gin-todo-list/src/controller"
-	"github.com/KenFront/gin-todo-list/src/middleware"
-	"github.com/KenFront/gin-todo-list/src/route"
+	"gin-todo-list/src/config"
+	"gin-todo-list/src/controller"
+	"gin-todo-list/src/middleware"
+	"gin-todo-list/src/route"
+
 	"github.com/gin-gonic/gin"
 )
 

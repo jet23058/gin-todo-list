@@ -3,7 +3,8 @@ package util
 import (
 	"errors"
 
-	"github.com/KenFront/gin-todo-list/src/model"
+	"gin-todo-list/src/model"
+
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 )

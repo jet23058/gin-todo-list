@@ -3,7 +3,7 @@ package mock
 import (
 	"testing"
 
-	"github.com/KenFront/gin-todo-list/src/model"
+	"gin-todo-list/src/model"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"

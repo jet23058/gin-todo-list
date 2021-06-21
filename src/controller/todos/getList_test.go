@@ -4,10 +4,11 @@ import (
 	"net/http"
 	"testing"
 
-	controller_todos "github.com/KenFront/gin-todo-list/src/controller/todos"
-	"github.com/KenFront/gin-todo-list/src/mock"
-	"github.com/KenFront/gin-todo-list/src/model"
-	"github.com/KenFront/gin-todo-list/src/util"
+	controller_todos "gin-todo-list/src/controller/todos"
+	"gin-todo-list/src/mock"
+	"gin-todo-list/src/model"
+	"gin-todo-list/src/util"
+
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 )

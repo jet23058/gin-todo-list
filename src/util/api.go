@@ -1,7 +1,8 @@
 package util
 
 import (
-	"github.com/KenFront/gin-todo-list/src/model"
+	"gin-todo-list/src/model"
+
 	"github.com/gin-gonic/gin"
 )
 

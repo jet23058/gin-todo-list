@@ -1,9 +1,9 @@
 package route
 
 import (
-	"github.com/KenFront/gin-todo-list/src/config"
-	controller_users "github.com/KenFront/gin-todo-list/src/controller/users"
-	"github.com/KenFront/gin-todo-list/src/middleware"
+	"gin-todo-list/src/config"
+	controller_users "gin-todo-list/src/controller/users"
+	"gin-todo-list/src/middleware"
 
 	"github.com/gin-gonic/gin"
 )

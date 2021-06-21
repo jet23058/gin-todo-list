@@ -1,4 +1,4 @@
-module github.com/KenFront/gin-todo-list
+module gin-todo-list
 
 go 1.16
 
